@@ -4,5 +4,5 @@ export const  generateToken = (payload) => {
 }
 
 export const verifyToken = (token) => {
-    return jwt.verify(token);
+    return jwt.verify(token,"IL300");
 }

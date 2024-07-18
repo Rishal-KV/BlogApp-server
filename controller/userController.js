@@ -74,11 +74,12 @@ export const userController = {
   },
   updateUser: async (req, res) => {
     try {
+      console.log(req.body,"reqbody")
       const { email, name, about } = req.body;
       console.log();
       const oldImage = user.findOne({email:email})
       const image = req.file
-      ? `http://localhost:3000/${req.file.filename}`
+      ? `https//blogapp.nutrix.fun/${req.file.filename}`
       : oldImage.image;
       const userUpdated = await user.findOneAndUpdate(
         { email: email },

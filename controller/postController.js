@@ -3,7 +3,7 @@ export const postController = {
   createPost: async (req, res) => {
     try {
       const image = req.file
-        ? `http://localhost:3000/${req.file.filename}`
+        ? `https//blogapp.nutrix.fun/${req.file.filename}`
         : null;
       const { title, description,user } = req.body;
       console.log(user,"userr");

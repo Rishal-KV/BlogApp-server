@@ -1,7 +1,7 @@
 import {connect} from 'mongoose';
 
 export const connectDB = () => {
-    connect('mongodb://localhost:27017/blog').then(()=>{
+    connect('mongodb+srv://heyrishu:12345@cluster0.5xfoebk.mongodb.net/BlogApp').then(()=>{
         console.log("Db connected")
     })
 } 
